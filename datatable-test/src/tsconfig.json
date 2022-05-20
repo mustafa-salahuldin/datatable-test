@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": [ "es5", "es2015", "es2016", "es2017", "es2018", "ES2018.Promise", "dom" ],
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "target": "es5",
+    "sourceMap": true,
+    "module": "commonjs", // this is what will make web browsers load Source Maps.
+    "outDir": "out",
+    "esModuleInterop": false
+  }
+}

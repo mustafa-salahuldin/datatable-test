@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link href="~/lib/datatables.net-bs4/dataTables.bootstrap4.css" rel="stylesheet" />
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<table class="table dataTable no-footer" id="table-files" role="grid" aria-describedby="files-list">
+    <thead>
+        <tr>
+            <th style="width: 5%">#</th>
+            <th style="width: 24%">Name</th>
+            <th style="width: 2.5%">Version</th>
+            <th style="width: 10%">Date Added</th>
+            <th style="width: 9%">Size (MB)</th>
+            <th style="width: 25%">Progress</th>
+            <th style="width: 10%">Status</th>
+            <th style="width: 5%">QR</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+
+@section scripts{
+    <script src="~/js/app_myapp.js"></script>
+    <script>
+        $(document).ready(() => {
+            var app = new app_myapp();
+
+        });
+    </script>
+}
