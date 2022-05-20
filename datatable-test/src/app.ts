@@ -311,7 +311,7 @@ export class FilesTable {
                             responsive: true,
                             //searchHighlight: true,
                             //filter: 'applied',
-                            //fixedcolumns: true,
+                            fixedcolumns: true,
                             paging: false,
                             order: [[1, 'asc']],
                             columns: [
